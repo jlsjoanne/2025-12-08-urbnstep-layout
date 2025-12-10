@@ -1,0 +1,40 @@
+/*color*/
+
+/*primary*/
+$primary-color-100: #F5FEE7;
+$primary-color-200: #E8FEC5;
+$primary-color-300: #C0FA73;
+$primary-color-400: #57A203;
+$primary-color-500: #477A11;
+
+/*neutral*/
+$neutral-color-0: #FFFFFF;
+$neutral-color-100: #F8F9FA;
+$neutral-color-200: #E9ECEF;
+$neutral-color-300: #DEE2E6;
+$neutral-color-400: #CED4DA;
+$neutral-color-500: #ADB5BD;
+$neutral-color-600: #6C757D;
+$neutral-color-700: #495057;
+$neutral-color-800: #343A40;
+$neutral-color-900: #212529;
+
+/*spacing*/
+$spacing-xxs: 4px;
+$spacing-xs: $spacing-xxs * 2;
+$spacing-s: $spacing-xxs * 3;
+$spacing-m: $spacing-xxs * 4;
+$spacing-l: $spacing-xxs * 6;
+$spacing-xl: $spacing-xxs * 8;
+$spacing-2xl: $spacing-xxs * 10;
+$spacing-3xl:$spacing-xxs * 12;
+$spacing-4xl:$spacing-xxs * 14;
+$spacing-5xl:$spacing-xxs * 16;
+$spacing-6xl:$spacing-xxs * 20;
+
+
+/*font weight*/
+
+$regular: 400;
+$medium: 500;
+$bold: 700;

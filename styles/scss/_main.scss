@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+
+body{
+    width: 1920px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+
+
+.container{
+    margin-left: 312px;
+    margin-right: 312px;
+    max-width: 1296px;
+}
+
+.navbar{
+    display: flex;
+    height: 80px;
+    padding-top: $spacing-m;
+    padding-bottom: $spacing-m;
+    justify-content: space-between;
+    .logo_and_link{
+        display: flex;
+        gap: $spacing-3xl;
+    }
+}
+
+.hero_section{
+    height: 800px;
+    background-image: url(../../assets/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .content{
+        position: absolute;
+        top: 289px;
+        left: 200px;
+        width: 586px;
+        display: flex;
+        flex-direction: column;
+        gap:$spacing-3xl;
+        color: $neutral-color-0;
+    }
+}
