@@ -3,7 +3,7 @@
 
 
 body{
-    width: 1920px;
+    max-width: 1920px;
     font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -25,6 +25,10 @@ body{
         display: flex;
         gap: $spacing-3xl;
     }
+    .bi-person{
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .hero_section{
@@ -42,5 +46,231 @@ body{
         flex-direction: column;
         gap:$spacing-3xl;
         color: $neutral-color-0;
+    }
+}
+
+.new_arrival{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    background-color: $neutral-color-0;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xl;
+        .title{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: $spacing-s
+        }
+
+        .card_wrapper{
+            display: flex;
+            gap: $spacing-l;
+            .product{
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-s;
+                img{
+                    max-width: 636px;
+                    max-height: 636px;
+                }
+                .label{
+                    gap: $spacing-xxs;
+                    color: $neutral-color-900;
+                }
+                &:hover{
+                    opacity: 80%;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+.best_seller{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-m;
+        .card_wrapper{
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            .card_image{
+                position: relative;
+                img{
+                    max-height:306px;
+                    &:hover{
+                        opacity: 70%;
+                    }
+                }
+                .badge{
+                    position: absolute;
+                    padding: $spacing-xs $spacing-s;
+                    top: 0px;
+                    left: 0px;
+                    background-color: $primary-color-100;
+                    color: $primary-color-400;
+                }
+            }
+        }
+    }
+}
+
+.section_sale{
+    padding-top: $spacing-3xl;
+    padding-bottom: $spacing-3xl;
+    .sale{
+        background-image: url(../../assets/banner-co-branded.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px $spacing-6xl;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: $spacing-3xl;
+            position: relative;
+            width: fit-content;
+            
+            .title{
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-m;
+                color: $neutral-color-0;
+                text-align: center;
+                .title{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: $spacing-l;
+                    h1{
+                        color: $primary-color-300;
+                    }
+                }
+                .text_p_lg{
+                    color: $neutral-color-500;
+                }
+            }
+            .star{
+                position: absolute;
+                left: -80px;
+                top: -32px;
+                z-index: 2;
+            }
+            .sparkle{
+                position: absolute;
+                right: -40px;
+                top: calc(50% - 64px/2 + 71px);
+                z-index: 3;
+            }
+        }
+    }
+}
+
+.series{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-m;
+        color: $neutral-color-900;
+        .card_wrapper{
+            display: flex;
+            justify-content: space-between;
+            .category{
+                position: relative;
+                display: inline-block;
+                img{
+                    max-height:306px;
+                    filter: brightness(60%);
+                }
+                .label{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spacing-xs;
+                    color: $neutral-color-0;
+                    h3{
+                        white-space: nowrap;
+                    }
+                }
+                &:hover{
+                    h3{
+                        color: $primary-color-300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.style{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    color: $neutral-color-900;
+    .card_wrapper{
+        display: grid;
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+}
+
+.call_to_action{
+    padding-top: $spacing-3xl;
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 96px;
+        background-color: $primary-color-200;
+        padding-top: $spacing-l;
+        padding-bottom: $spacing-l;
+        gap: $spacing-l;
+        color: $neutral-color-900;
+    }
+}
+
+footer{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    background-color: $neutral-color-100;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-l;
+        .logo_and_link{
+            display: flex;
+            justify-content: space-between;
+            .page_link{
+                gap: $spacing-2xl;
+                display: flex;
+            }
+        }
+        .copyright{
+            padding-top: $spacing-xl;
+            border-top: 1px solid $neutral-color-300;
+            .text_p_sm{
+                color: $neutral-color-600;
+                text-align: center;
+            }
+        }
     }
 }

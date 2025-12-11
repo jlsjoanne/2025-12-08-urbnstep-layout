@@ -119,6 +119,7 @@ h6{
     padding-top: $spacing-s;
     padding-bottom: $spacing-s;
     min-height: 48px;
+    cursor: pointer;
     color: $neutral-color-900;
     &:hover{
         color: $neutral-color-600;
@@ -130,46 +131,49 @@ h6{
 
 .button_text{
     display: inline-block;
-    border-radius: var(--radius-xs);
+    border-radius: $radius-sm;
     padding: $spacing-s $spacing-l;
     gap: $spacing-xs;
-    width: 171px;
-    height: 48px;
+    width: max-content;
     min-height: 48px;
     text-align: center;
+    cursor: pointer;
+}
 
-    .primary{
-        background-color: $primary-color-300;
-        color: $neutral-color-900;
-        &:hover{
+.button_color_primary{
+    background-color: $primary-color-300;
+    color: $neutral-color-900;
+    &:hover{
         color: $primary-color-500;
-        }
     }
+}
 
-    .neutral_filled{
+.button_neutral_filled{
+    background-color: $neutral-color-900;
+    color: $neutral-color-0;
+    &:hover{
+        background-color: $neutral-color-700;
+    }
+}
+
+.button_neutral_outlined{
+    border: 1px $neutral-color-900;
+    color: $neutral-color-900;
+    &:hover{
         background-color: $neutral-color-900;
         color: $neutral-color-0;
-        &:hover{
-            background-color: $neutral-color-700;
-        }
-    }
-
-    .neutral_outlined{
-        border: 1px $neutral-color-900;
-        color: $neutral-color-900;
-        &:hover{
-            background-color: $neutral-color-900;
-            color: $neutral-color-0;
-        }
     }
 }
 
 .button_icon{
+    display: inline-block;
+    max-width: 48px;
+    max-height: 48px;
     border-radius: var(--radius-xs);
     padding: $spacing-s;
     align-items: center;
     justify-content: center;
     &:hover{
-        fill: $primary-color-400;
+        color: $primary-color-400;
     }
 }

@@ -3,6 +3,7 @@
 /*neutral*/
 /*spacing*/
 /*font weight*/
+/*radius*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -181,6 +182,7 @@ h6 {
   padding-top: 12px;
   padding-bottom: 12px;
   min-height: 48px;
+  cursor: pointer;
   color: #212529;
 }
 .link_text:hover {
@@ -190,49 +192,55 @@ h6 {
 /*button*/
 .button_text {
   display: inline-block;
-  border-radius: var(--radius-xs);
+  border-radius: 4px;
   padding: 12px 24px;
   gap: 8px;
-  width: 171px;
-  height: 48px;
+  width: max-content;
   min-height: 48px;
   text-align: center;
+  cursor: pointer;
 }
-.button_text .primary {
+
+.button_color_primary {
   background-color: #C0FA73;
   color: #212529;
 }
-.button_text .primary:hover {
+.button_color_primary:hover {
   color: #477A11;
 }
-.button_text .neutral_filled {
+
+.button_neutral_filled {
   background-color: #212529;
   color: #FFFFFF;
 }
-.button_text .neutral_filled:hover {
+.button_neutral_filled:hover {
   background-color: #495057;
 }
-.button_text .neutral_outlined {
+
+.button_neutral_outlined {
   border: 1px #212529;
   color: #212529;
 }
-.button_text .neutral_outlined:hover {
+.button_neutral_outlined:hover {
   background-color: #212529;
   color: #FFFFFF;
 }
 
 .button_icon {
+  display: inline-block;
+  max-width: 48px;
+  max-height: 48px;
   border-radius: var(--radius-xs);
   padding: 12px;
   align-items: center;
   justify-content: center;
 }
 .button_icon:hover {
-  fill: #57A203;
+  color: #57A203;
 }
 
 body {
-  width: 1920px;
+  max-width: 1920px;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -253,6 +261,10 @@ body {
   display: flex;
   gap: 48px;
 }
+.navbar .bi-person {
+  width: 24px;
+  height: 24px;
+}
 
 .hero_section {
   height: 800px;
@@ -270,4 +282,222 @@ body {
   flex-direction: column;
   gap: 48px;
   color: #FFFFFF;
+}
+
+.new_arrival {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #FFFFFF;
+}
+.new_arrival .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.new_arrival .content .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+}
+.new_arrival .content .card_wrapper {
+  display: flex;
+  gap: 24px;
+}
+.new_arrival .content .card_wrapper .product {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.new_arrival .content .card_wrapper .product img {
+  max-width: 636px;
+  max-height: 636px;
+}
+.new_arrival .content .card_wrapper .product .label {
+  gap: 4px;
+  color: #212529;
+}
+.new_arrival .content .card_wrapper .product:hover {
+  opacity: 80%;
+}
+
+.best_seller {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.best_seller .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.best_seller .content .card_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.best_seller .content .card_wrapper .card_image {
+  position: relative;
+}
+.best_seller .content .card_wrapper .card_image img {
+  max-height: 306px;
+}
+.best_seller .content .card_wrapper .card_image img:hover {
+  opacity: 70%;
+}
+.best_seller .content .card_wrapper .card_image .badge {
+  position: absolute;
+  padding: 8px 12px;
+  top: 0px;
+  left: 0px;
+  background-color: #F5FEE7;
+  color: #57A203;
+}
+
+.section_sale {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.section_sale .sale {
+  background-image: url(../../assets/banner-co-branded.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section_sale .sale .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  width: fit-content;
+}
+.section_sale .sale .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.section_sale .sale .content .title .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+.section_sale .sale .content .title .title h1 {
+  color: #C0FA73;
+}
+.section_sale .sale .content .title .text_p_lg {
+  color: #ADB5BD;
+}
+.section_sale .sale .content .star {
+  position: absolute;
+  left: -80px;
+  top: -32px;
+  z-index: 2;
+}
+.section_sale .sale .content .sparkle {
+  position: absolute;
+  right: -40px;
+  top: calc(50% - 32px + 71px);
+  z-index: 3;
+}
+
+.series {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.series .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #212529;
+}
+.series .content .card_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.series .content .card_wrapper .category {
+  position: relative;
+  display: inline-block;
+}
+.series .content .card_wrapper .category img {
+  max-height: 306px;
+  filter: brightness(60%);
+}
+.series .content .card_wrapper .category .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #FFFFFF;
+}
+.series .content .card_wrapper .category .label h3 {
+  white-space: nowrap;
+}
+.series .content .card_wrapper .category:hover h3 {
+  color: #C0FA73;
+}
+
+.style {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: #212529;
+}
+.style .card_wrapper {
+  display: grid;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+.call_to_action {
+  padding-top: 48px;
+}
+.call_to_action .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 96px;
+  background-color: #E8FEC5;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  gap: 24px;
+  color: #212529;
+}
+
+footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #F8F9FA;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+footer .container .logo_and_link {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .logo_and_link .page_link {
+  gap: 40px;
+  display: flex;
+}
+footer .container .copyright {
+  padding-top: 32px;
+  border-top: 1px solid #DEE2E6;
+}
+footer .container .copyright .text_p_sm {
+  color: #6C757D;
+  text-align: center;
 }/*# sourceMappingURL=all.css.map */
