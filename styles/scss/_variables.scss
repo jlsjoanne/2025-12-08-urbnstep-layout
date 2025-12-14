@@ -32,15 +32,45 @@ $spacing-4xl:$spacing-xxs * 14;
 $spacing-5xl:$spacing-xxs * 16;
 $spacing-6xl:$spacing-xxs * 20;
 
-
-/*font weight*/
-
-$regular: 400;
-$medium: 500;
-$bold: 700;
+/*font-setting*/
 
 
 
+/*font-size*/
+$font-size-Display-1: 4rem;
+$font-size-Display-2: 3rem;
+$font-size-H1: 2.5rem;
+$font-size-H2:2rem;
+$font-size-H3:1.75rem;
+$font-size-H4:1.5rem;
+$font-size-H5:1.25rem;
+$font-size-H6:1rem;
+$font-size-l-lg:1.25rem;
+$font-size-l-md:1rem;
+$font-size-l-sm:0.875rem;
+$font-size-l-xs:0.75rem;
+$font-size-p-lg:1.25rem;
+$font-size-p-md:1rem;
+$font-size-p-sm:0.875rem;
+$font-size-p-xs:0.75rem;
+
+
+/*font:weight*/
+$font-weight-display: 700;
+$font-weight-heading: 700;
+$font-weight-l: 500;
+$font-weight-p: 400;
+
+/*font: line-height*/
+
+$line-height-display: 120%;
+$line-height-heading: 120%;
+$line-height-l: 150%;
+$line-height-p: 150%;
+
+/*font: letter spacing*/
+
+$letter-spacing: 0.05em;
 
 /*radius*/
 

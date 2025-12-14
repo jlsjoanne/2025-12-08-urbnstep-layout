@@ -1,121 +1,3 @@
-/*text*/
-.text_Display_1{
-    font-size: 4rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-$Display_1 : ".text_Display_1";
-
-.text_Display_2{
-    font-size: 3rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-$Display_2 : ".text_Display_2";
-
-h1{
-    font-size: 2.5rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-h2{
-    font-size: 2rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-h3{
-    font-size: 1.75rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-h4{
-    font-size: 1.5rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-h5{
-    font-size: 1.25rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-h6{
-    font-size: 1rem;
-    font-weight: $bold;
-    line-height: 120%;
-    letter-spacing: 0.05em;
-}
-
-.text_label_lg{
-    font-size: 1.25rem;
-    font-weight: $medium;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_label_md{
-    font-size: 1rem;
-    font-weight: $medium;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_label_sm{
-    font-size: 0.875rem;
-    font-weight: $medium;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_label_xs{
-    font-size: 0.75rem;
-    font-weight: $medium;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_p_lg{
-    font-size: 1.25rem;
-    font-weight: $regular;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_p_md{
-    font-size: 1rem;
-    font-weight: $regular;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_p_sm{
-    font-size: 0.875rem;
-    font-weight: $regular;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-.text_p_xs{
-    font-size: 0.75rem;
-    font-weight: $regular;
-    line-height: 150%;
-    letter-spacing: 0.05em;
-}
-
-
 /*link*/
 
 .link_text{
@@ -141,6 +23,9 @@ h6{
     width: max-content;
     min-height: 48px;
     text-align: center;
+    font-size: $font-size-l-md;
+    font-weight: $font-weight-l;
+    line-height: $line-height-l;
     cursor: default;
 }
 

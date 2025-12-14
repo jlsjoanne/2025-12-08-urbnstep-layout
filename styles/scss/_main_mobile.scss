@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 375px) {
     .container{
         margin-left: 3.2%;
@@ -5,65 +6,104 @@
         max-width: 93.6%;
     }
     
-    .navbar{
-        display: none;
-    }
-
-    .navbar_mobile{
-        display: flex;
-        flex-direction: column;
+    .Navbar{
         height: 120px;
-        width: 100%;
-        .logo_and_profile{
-            height: 72px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .container{
+            padding-top: $spacing-s;
+            padding-bottom: $spacing-s;
+            .logo_n_link{
+                gap: $spacing-xl;
+                .page_link{
+                    display: none;
+                }
+            }
         }
-        .link{
+        .page_link{
             display: flex;
-            text-align: center;
-            align-items: center;
+            .button{
+                padding-top: $spacing-s;
+                padding-bottom: $spacing-s;
+                padding-left: $spacing-l;
+                padding-right: $spacing-l;
+                text-align: center;
+                font-size: $font-size-l-md;
+                font-weight: $font-weight-l;
+                line-height: $line-height-l;
+                letter-spacing: $letter-spacing;
+                width: 50%;
+            }
             .product{
                 background-color: $primary-color-200;
-                width: 50%;
             }
             .brand{
                 background-color: $primary-color-100;
-                width: 50%;
             }
         }
     }
 
-    .hero_section{
-        
+    .Hero_Section{
+        height: 480px;
+        background-image: url(../../assets/banner-sm.png);
+        padding-left: $spacing-l;
+        padding-right: $spacing-l;
+        .content{
+            gap: $spacing-xl;
+            width: 87.2%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .titles{
+                gap: $spacing-xs;
+                .title{
+                    font-size: $font-size-Display-2;
+                }
+                .subtitle{
+                    font-size: $font-size-H5;
+                }
+            }
+        }
     }
 
-    .new_arrival{
-        display: none;
+    .New_Arrival{
+        padding-top: $spacing-2xl;
+        padding-bottom: $spacing-2xl;
+        .container{
+            gap: $spacing-l;
+            .titles{
+                gap: $spacing-xs;
+                .title{
+                    font-size: $font-size-H2;
+                    font-weight: $font-weight-heading;
+                    line-height: $line-height-heading;
+                }
+                .subtitle{
+                    font-size: $font-size-H4;
+                }
+
+            }
+            .product{
+                gap: $spacing-l;
+                .card_wrapper{
+                    gap: $spacing-s;
+                    .card{
+                        gap: $spacing-xs;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                        }
+                        .label{
+                            gap: 0;
+                            .name{
+                                font-size: $font-size-H6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
-    .best_seller{
-        display: none;
-    }
-
-    .section_sale{
-        display: none;
-    }
-
-    .series{
-        display: none;
-    }
-
-    .style{
-        display: none;
-    }
-
-    .call_to_action{
-        display: none;
-    }
-
-    footer{
-        display: none;
-    }
+    
 }
+
