@@ -1,0 +1,77 @@
+/*link*/
+
+.link_text{
+    display: inline-block;
+    padding-top: $spacing-s;
+    padding-bottom: $spacing-s;
+    min-height: 48px;
+    cursor: default;
+    font-size: $font-size-l-md;
+    font-weight: $font-weight-l;
+    line-height: $line-height-l;
+    color: $neutral-color-900;
+    &:hover{
+        color: $neutral-color-600;
+    }
+}
+
+
+/*button*/
+
+.button_text{
+    display: inline-block;
+    border-radius: $radius-sm;
+    padding: $spacing-s $spacing-l;
+    gap: $spacing-xs;
+    width: max-content;
+    min-height: 48px;
+    text-align: center;
+    font-size: $font-size-l-md;
+    font-weight: $font-weight-l;
+    line-height: $line-height-l;
+    cursor: default;
+}
+
+.button_color_primary{
+    background-color: $primary-color-300;
+    color: $neutral-color-900;
+    &:hover{
+        color: $primary-color-500;
+    }
+}
+
+.button_neutral_filled{
+    background-color: $neutral-color-900;
+    color: $neutral-color-0;
+    &:hover{
+        background-color: $neutral-color-700;
+    }
+}
+
+.button_neutral_outlined{
+    border: 1px $neutral-color-900;
+    color: $neutral-color-900;
+    &:hover{
+        background-color: $neutral-color-900;
+        color: $neutral-color-0;
+    }
+}
+
+.button_icon{
+    display: inline-block;
+    max-width: 48px;
+    max-height: 48px;
+    border-radius: var(--radius-xs);
+    padding: $spacing-s;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        color: $primary-color-400;
+    }
+}
+
+/*icon*/
+
+.bi-person{
+    font-size: 1.5rem;
+}
