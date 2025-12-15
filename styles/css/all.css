@@ -1112,6 +1112,19 @@ footer{
 }
 /*body, container setting same as homepage(index.html)*/
 /*navbar, call to action, footer same as homepage*/
+.Product_Info {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  gap: 24px;
+}
+.Product_Info .product_image {
+  width: 57.562%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 @media screen and (max-width: 375px) {
   /*Navbar other version different than homepage*/
   .Nav_other {

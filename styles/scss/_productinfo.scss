@@ -2,3 +2,16 @@
 
 /*navbar, call to action, footer same as homepage*/
 
+.Product_Info{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    display: flex;
+    gap: $spacing-l;
+    .product_image{
+        width: 57.562%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: $spacing-xs;
+        //border: 1px solid black;
+    }
+}
