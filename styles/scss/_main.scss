@@ -133,6 +133,11 @@ body{
                             line-height: $line-height-l;
                         }
                     }
+                    &:hover{
+                        img{
+                            opacity: 80%;
+                        }
+                    }
                 }
             }
         }
@@ -161,7 +166,8 @@ body{
             .card{
                 max-height: 306px;
                 position: relative;
-                
+                display: inline-block;
+                cursor: default;
                 img{
                     height: 100%;
                     width: 100%;
