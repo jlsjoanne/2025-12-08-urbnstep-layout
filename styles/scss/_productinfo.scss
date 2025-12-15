@@ -1,0 +1,28 @@
+/*body, container setting same as homepage(index.html)*/
+
+/*call to action, footer same as homepage*/
+
+/*Navbar Other's web version same as Homepage*/
+.Navbar_Other{
+    height: 80px;
+    .container{
+        padding-top: $spacing-m;
+        padding-bottom: $spacing-m;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo_n_link{
+            display: flex;
+            gap: $spacing-3xl;
+            .page_link{
+                display: flex;
+                gap: $spacing-2xl;
+                .link_text{
+                    font-size: $font-size-l-md;
+                    font-weight: $font-weight-l;
+                    line-height: $line-height-l;
+                }
+            }
+        }
+    }
+}

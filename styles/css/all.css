@@ -1109,4 +1109,30 @@ footer{
     flex-direction: column;
     gap: 4px;
   }
+}
+/*body, container setting same as homepage(index.html)*/
+/*call to action, footer same as homepage*/
+/*Navbar Other's web version same as Homepage*/
+.Navbar_Other {
+  height: 80px;
+}
+.Navbar_Other .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Navbar_Other .container .logo_n_link {
+  display: flex;
+  gap: 48px;
+}
+.Navbar_Other .container .logo_n_link .page_link {
+  display: flex;
+  gap: 40px;
+}
+.Navbar_Other .container .logo_n_link .page_link .link_text {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
 }/*# sourceMappingURL=all.css.map */
