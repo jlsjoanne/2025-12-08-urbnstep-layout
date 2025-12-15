@@ -1,5 +1,9 @@
 
 @media screen and (max-width: 375px) {
+    body{
+        overflow-x: hidden;
+    }
+    
     .container{
         margin-left: 3.2%;
         margin-right: 3.2%;
@@ -104,6 +108,172 @@
         }
     }
 
-    
+    .Best_Seller{
+        padding-top: $spacing-2xl;
+        padding-bottom: $spacing-2xl;
+        .container{
+            .title{
+                height: 40px;
+                font-size: $font-size-H4;
+            }
+            .card_wrapper{
+                height: 300px;
+                gap: $spacing-m;
+                .card{
+                    
+                    width: 300px;
+                    img{
+                        height: 100%;
+                        width: 300px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .Sale{
+        padding-top: $spacing-l;
+        padding-bottom: $spacing-l;
+        .sale_img{
+            background-image: url(../../assets/banner-co-branded-sm.png);
+            padding: $spacing-5xl $spacing-s;
+            .context{
+                gap: $spacing-xl;
+                width: 100%;
+                //overflow-x: hidden;
+                .text{
+                    gap: $spacing-l;
+                    width: 100%;
+                    .titles{
+                        .title{
+                            flex-direction: column;
+                            gap: $spacing-xs;
+                            align-items: center;
+                            .text_neutral{
+                                font-size: $font-size-H2;
+                                font-weight: $font-weight-heading;
+                                line-height: $line-height-heading;
+                            }
+                            .text_primary{
+                                font-size: $font-size-H3;
+                            }
+                        }
+                        .subtitle{
+                            font-size: $font-size-H5;
+                        }
+                    }
+                    .text_grey{
+                        display: none;
+                    }
+                    .paragraph{
+                        display: flex;
+                        flex-direction: column;
+                        gap: $spacing-xxs;
+                        text-align: center;
+                        width: 100%;
+                        
+                        p{
+                            font-size: $font-size-p-md;
+                            font-weight: $font-weight-p;
+                            line-height: $line-height-p;
+                            color: $neutral-color-500;
+                        }
+                    }
+                }
+                .star{
+                    left: -32px;
+                    top: -32px;
+                }
+                .sparkle{
+                    right: -40px;
+                    top: calc(50% - 64px/2 + 89px);
+                    
+                }
+            }
+        }
+    }
+
+    .Series{
+        padding-top: $spacing-2xl;
+        padding-bottom: $spacing-2xl;
+        .container{
+            .title{
+                font-size: $font-size-H4;
+            }
+            .card_wrapper{
+                gap: $spacing-s;
+                flex-wrap: wrap;
+                .card{
+                    max-height: 169.5px;
+                    max-width: 169.5px;
+                    .label{
+                        .text_en{
+                            font-size: $font-size-H6;
+                        }
+                        .text_ch{
+                            font-size: $font-size-H6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Style{
+        padding-top: $spacing-2xl;
+        padding-bottom: $spacing-2xl;
+        .container{
+            .title{
+                max-height: 40px;
+                font-size: $font-size-H4;
+            }
+            .card_wrapper{
+                display: flex;
+                gap: $spacing-m;
+                height: 300px;
+                overflow: hidden;
+
+                .card{
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .Call_to_Action{
+        padding-top: $spacing-l;
+        .banner{
+            width: 100%;
+            padding-right: $spacing-s;
+            padding-left: $spacing-s;
+            gap: $spacing-m;
+            .text{
+                font-size: $font-size-H5;
+            }
+        }
+    }
+
+    footer{
+        padding-top: $spacing-xl;
+        padding-bottom: $spacing-xl;
+        .logo_n_link{
+            flex-direction: column;
+            gap: $spacing-xxs;
+            img{
+                max-width: 129px;
+            }
+            .page_link{
+                padding-right: $spacing-s;
+                padding-left: $spacing-s;
+                flex-direction: column;
+                gap: $spacing-xxs;
+            }
+        }
+    }
 }
 
