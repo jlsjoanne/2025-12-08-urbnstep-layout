@@ -1109,4 +1109,13 @@ footer{
     flex-direction: column;
     gap: 4px;
   }
+}
+/*body, container setting same as homepage(index.html)*/
+/*call to action, footer same as homepage*/
+/*Navbar Other's web version same as Homepage*/
+@media screen and (max-width: 375px) {
+  /*Navbar other version different than homepage*/
+  .Nav_other {
+    height: 72px;
+  }
 }/*# sourceMappingURL=all.css.map */
