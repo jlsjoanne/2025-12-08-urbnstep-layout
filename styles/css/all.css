@@ -272,6 +272,9 @@ body {
   font-weight: 500;
   line-height: 150%;
 }
+.New_Arrival .container .product .card_wrapper .card:hover img {
+  opacity: 80%;
+}
 
 .Best_Seller {
   padding-top: 64px;
@@ -298,6 +301,8 @@ body {
 .Best_Seller .container .card_wrapper .card {
   max-height: 306px;
   position: relative;
+  display: inline-block;
+  cursor: default;
 }
 .Best_Seller .container .card_wrapper .card img {
   height: 100%;
