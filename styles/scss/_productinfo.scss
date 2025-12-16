@@ -9,18 +9,18 @@
     gap: $spacing-l;
     .product_image{
         width: calc(746/1296*100%);
-        display: flex;
-        flex-wrap: wrap;
-        gap: $spacing-xs;
-        .main_img{
-            width: calc(369/746*100%);
-            aspect-ratio: 1 / 1;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,minmax(0,1fr));
+        column-gap: $spacing-xs;
+        row-gap: $spacing-xs;
+        img{
+            width: 100%;
+            aspect-ratio: 1;
         }
     }
+    
     
     .product_info{
         display: flex;
