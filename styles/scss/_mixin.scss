@@ -1,7 +1,0 @@
-@mixin mobile{
-    @media (max-width:600px){
-        margin: 12px;
-        gap: 16px;
-        @content;
-    }
-}

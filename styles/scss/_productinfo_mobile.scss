@@ -4,4 +4,94 @@
     .Nav_other{
         height: 72px;
     }
+
+    .Product_Info{
+        flex-direction: column;
+        gap: $spacing-l;
+        padding-top: 0 $spacing-s;
+        
+        .product_image{
+            display: none;
+        }
+
+        .product_info{
+            max-width: 100%;
+            .intro{
+                gap: $spacing-s;
+                .breadcrumb_n_name{
+                    gap: $spacing-xs;
+                    .breadcrumb{
+                        gap: $spacing-xs;
+                        .text{
+                            font-size: $font-size-l-sm;
+                        }
+                        
+                    }
+                    .name{
+                        font-size: $font-size-H4;
+                    }
+                }
+                .price{
+                    .special{
+                        font-size: $font-size-H6;
+                    }
+                }
+            }
+            .spec_n_cta{
+                gap: $spacing-l;
+                .spec{
+                    gap: $spacing-l;
+                    .size{
+                        .last{
+                            font-size: $font-size-p-sm;
+                        }
+                    }
+                }
+                .btn_wrapper{
+                    .button_neutral_outlined{
+                        display: none;
+                    }
+                    .button_text{
+                        width: calc(295/351*100%);
+                    }
+                    .button_icon .bi-heart{
+                        display: block;
+                    }
+
+                }
+            }
+        }
+        
+    }
+
+    .product_image_mobile{
+        display: block;
+        img{
+            width: 375px;
+            height: 375px;
+        }
+    }
+
+    .Interested{
+        padding-top: $spacing-2xl;
+        padding-bottom: $spacing-2xl;
+        .container{
+            .title{
+                height: 40px;
+                font-size: $font-size-H5;
+            }
+            .card_wrapper{
+                max-height: 359px;
+                gap: $spacing-m;
+                .card{
+                    width: 300px;
+                    img{
+                        height: 300px;
+                        width: 300px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
 }

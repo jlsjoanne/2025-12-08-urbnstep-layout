@@ -2,3 +2,258 @@
 
 /*navbar, call to action, footer same as homepage*/
 
+.Product_Info{
+    padding-top: $spacing-5xl;
+    padding-bottom: $spacing-5xl;
+    display: flex;
+    gap: $spacing-l;
+    .product_image{
+        width: calc(746/1296*100%);
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,minmax(0,1fr));
+        column-gap: $spacing-xs;
+        row-gap: $spacing-xs;
+        img{
+            width: 100%;
+            aspect-ratio: 1;
+        }
+    }
+    
+    
+    .product_info{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-xl;
+        max-width: calc(526/1296*100%);
+        .intro{
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-m;
+            .breadcrumb_n_name{
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-s;
+                
+                .breadcrumb{
+                    display: flex;
+                    gap: $spacing-s;
+                    align-items: center;
+                    .text{
+                        font-size: $font-size-l-md;
+                        font-weight: $font-weight-l;
+                        line-height: $line-height-l;
+                    }
+                    .text_grey{
+                        color: $neutral-color-600;
+                    }
+                    .text_black{
+                        color: $neutral-color-900;
+                    }
+                    .split{
+                        font-size: 1rem;
+                        font-weight: 700;
+                        line-height: 150%;
+                        letter-spacing: 0%;
+                        color: $neutral-color-300;
+                    }
+                }
+                .name{
+                    font-size: $font-size-H2;
+                    font-weight: $font-weight-heading;
+                    line-height: $line-height-heading;
+                    color: $neutral-color-900;
+                }
+            }
+            .price{
+                display: flex;
+                gap: $spacing-xs;
+                align-items: center;
+                .special{
+                    font-size: $font-size-H5;
+                    font-weight: $font-weight-heading;
+                    line-height: $line-height-heading;
+                    color: $primary-color-400;
+                }
+                .origin{
+                    font-size: $font-size-p-sm;
+                    font-weight: $font-weight-p;
+                    line-height: $line-height-p;
+                    color: $neutral-color-500;
+                    text-decoration: line-through;
+                }
+            }
+            .detail{
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-s;
+                .paragraph{
+                    font-size: $font-size-p-md;
+                    font-weight: $font-weight-p;
+                    line-height: $line-height-p;
+                    color: $neutral-color-900;
+                }
+            }
+        }
+        .spec_n_cta{
+            display: flex;
+            flex-direction: column;
+            gap: $spacing-3xl;
+            .spec{
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-xl;
+                .color{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spacing-xs;
+                    .name{
+                        font-size: $font-size-p-md;
+                        font-weight: $font-weight-p;
+                        line-height: $line-height-p;
+                        color: $neutral-color-900;
+                    }
+                    .btn_wrapper{
+                        display: flex;
+                        gap: $spacing-xs;
+                        .img_n_text{
+                            display: flex;
+                            flex-direction: column;
+                            gap: $spacing-xxs;
+                            width: 64px;
+                            img{
+                                width: 100%;
+                                aspect-ratio: 1 / 1;
+                            }
+                            .text{
+                                font-size: $font-size-l-md;
+                                font-weight: $font-weight-l;
+                                line-height: $line-height-l;
+                                color: $neutral-color-600;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .size{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spacing-xs;
+                    .text{
+                        font-size: $font-size-p-md;
+                        font-weight: $font-weight-p;
+                        line-height: $line-height-p;
+                    }
+                    .title{
+                        color: $neutral-color-900;
+                    }
+                    .last{
+                        color: $danger-color-300;
+                    }
+                    .btn_wrapper{
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: $spacing-xs;
+                    }
+                }
+            }
+            .btn_wrapper{
+                display: flex;
+                gap: $spacing-xs;
+                align-items: center;
+                .button_text{
+                    width: calc(259/526*100%);
+                    .favorite_blank{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: $spacing-xs;
+                    }
+                }
+                .button_icon .bi-heart{
+                    display: none;
+                }
+            }
+        }
+        .accordion{
+            display: flex;
+            flex-direction: column;
+            .accordion_item{
+                display: flex;
+                flex-direction: column;
+                padding-top: $spacing-s;
+                padding-bottom: $spacing-s;
+                gap: $spacing-xxs;
+                border-bottom: 1px solid $neutral-color-300;
+                .label{
+                    font-size: $font-size-l-md;
+                    font-weight: $font-weight-l;
+                    line-height: $line-height-l;
+                    color: $neutral-color-900;
+                }
+                p{
+                    font-size: $font-size-p-md;
+                    font-weight: $font-weight-p;
+                    line-height: $line-height-p;
+                    color: $neutral-color-600;
+                }
+
+            }
+        }
+    }
+}
+
+.product_image_mobile{
+        display: none;
+}
+
+.Interested{
+    padding-top: $spacing-3xl;
+    padding-bottom: $spacing-3xl;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-m;
+        .title{
+            display: flex;
+            height: 48px;
+            align-items: center;
+            font-size: $font-size-H4;
+            font-weight: $font-weight-heading;
+            line-height: $line-height-heading;
+            color: $neutral-color-900;
+        }
+        .card_wrapper{
+            display: flex;
+            gap: $spacing-l;
+            .card{
+                display: flex;
+                flex-direction: column;
+                gap: $spacing-s;
+                width: 306px;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                }
+                .label{
+                    display: flex;
+                    flex-direction: column;
+                    gap: $spacing-xxs;
+                    .name{
+                        font-size: $font-size-H6;
+                        font-weight: $font-weight-heading;
+                        line-height: $line-height-heading;
+                        color: $neutral-color-900;
+                    }
+                    .price{
+                        font-size: $font-size-l-md;
+                        font-weight: $font-weight-l;
+                        line-height: $line-height-l;
+                        color: $neutral-color-900;
+                    }
+                }
+            }
+        }
+    }
+}
