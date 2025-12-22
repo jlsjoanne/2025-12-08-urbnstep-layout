@@ -10,7 +10,7 @@
         max-width: 93.6%;
     }
     
-    .Navbar{
+    #Navbar{
         height: 120px;
         .container{
             padding-top: $spacing-s;
@@ -46,7 +46,7 @@
     }
 
 
-    .Hero_Section{
+    #Hero_Section{
         height: 480px;
         background-image: url(../../assets/banner-sm.png);
         padding-left: $spacing-l;
@@ -70,7 +70,7 @@
         }
     }
 
-    .New_Arrival{
+    #New_Arrival{
         padding-top: $spacing-2xl;
         padding-bottom: $spacing-2xl;
         .container{
@@ -109,7 +109,7 @@
         }
     }
 
-    .Best_Seller{
+    #Best_Seller{
         padding-top: $spacing-2xl;
         padding-bottom: $spacing-2xl;
         .container{
@@ -133,7 +133,7 @@
         }
     }
 
-    .Sale{
+    #Sale{
         padding-top: $spacing-l;
         padding-bottom: $spacing-l;
         .sale_img{
@@ -195,7 +195,7 @@
         }
     }
 
-    .Series{
+    #Series{
         padding-top: $spacing-2xl;
         padding-bottom: $spacing-2xl;
         .container{
@@ -221,7 +221,7 @@
         }
     }
 
-    .Style{
+    #Style{
         padding-top: $spacing-2xl;
         padding-bottom: $spacing-2xl;
         .container{
@@ -246,7 +246,7 @@
         }
     }
 
-    .Call_to_Action{
+    #Call_to_Action{
         padding-top: $spacing-l;
         .banner{
             width: 100%;

@@ -2,7 +2,7 @@
 
 /*navbar, call to action, footer same as homepage*/
 
-.Product_Info{
+#Product_Info{
     padding-top: $spacing-5xl;
     padding-bottom: $spacing-5xl;
     display: flex;
@@ -208,11 +208,11 @@
     }
 }
 
-.product_image_mobile{
+#product_image_mobile{
         display: none;
 }
 
-.Interested{
+#Interested{
     padding-top: $spacing-3xl;
     padding-bottom: $spacing-3xl;
     .container{
