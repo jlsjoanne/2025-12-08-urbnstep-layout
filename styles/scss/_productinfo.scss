@@ -164,6 +164,7 @@
                 align-items: center;
                 .button_text{
                     width: calc(259/526*100%);
+                    position: relative;
                     .favorite_blank{
                         display: flex;
                         justify-content: center;
@@ -171,9 +172,12 @@
                         gap: $spacing-xs;
                     }
                 }
+                
+                
                 .button_icon .bi-heart{
                     display: none;
                 }
+                
             }
         }
         .accordion{
