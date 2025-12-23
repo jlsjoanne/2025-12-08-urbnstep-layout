@@ -910,6 +910,9 @@ footer .copyright .text {
   gap: 12px;
   align-items: center;
 }
+#Product_Info .product_info .intro .breadcrumb_n_name .breadcrumb a {
+  cursor: pointer;
+}
 #Product_Info .product_info .intro .breadcrumb_n_name .breadcrumb .text {
   font-size: 1rem;
   font-weight: 500;

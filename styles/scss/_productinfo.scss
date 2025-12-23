@@ -40,6 +40,9 @@
                     display: flex;
                     gap: $spacing-s;
                     align-items: center;
+                    a{
+                        cursor: pointer;
+                    }
                     .text{
                         font-size: $font-size-l-md;
                         font-weight: $font-weight-l;
