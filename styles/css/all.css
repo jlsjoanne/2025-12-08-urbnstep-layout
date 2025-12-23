@@ -253,15 +253,15 @@ body {
   transform: translateY(-50%);
   color: #FFFFFF;
 }
-#Hero_Section .content .titles {
+#Hero_Section .content .heading-group {
   gap: 16px;
 }
-#Hero_Section .content .titles .title {
+#Hero_Section .content .heading-group .title {
   font-size: 4rem;
   font-weight: 700;
   line-height: 120%;
 }
-#Hero_Section .content .titles .subtitle {
+#Hero_Section .content .heading-group .description {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 120%;
@@ -276,18 +276,18 @@ body {
   flex-direction: column;
   gap: 32px;
 }
-#New_Arrival .container .titles {
+#New_Arrival .container .heading-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-#New_Arrival .container .titles .title {
+#New_Arrival .container .heading-group .title_en {
   font-size: 3rem;
   font-weight: 700;
   line-height: 120%;
 }
-#New_Arrival .container .titles .subtitle {
+#New_Arrival .container .heading-group .title_ch {
   font-size: 2rem;
   font-weight: 700;
   line-height: 120%;
@@ -666,13 +666,13 @@ footer .copyright .text {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #Hero_Section .content .titles {
+  #Hero_Section .content .heading-group {
     gap: 8px;
   }
-  #Hero_Section .content .titles .title {
+  #Hero_Section .content .heading-group .title {
     font-size: 3rem;
   }
-  #Hero_Section .content .titles .subtitle {
+  #Hero_Section .content .heading-group .description {
     font-size: 1.25rem;
   }
   #New_Arrival {
@@ -682,15 +682,15 @@ footer .copyright .text {
   #New_Arrival .container {
     gap: 24px;
   }
-  #New_Arrival .container .titles {
+  #New_Arrival .container .heading-group {
     gap: 8px;
   }
-  #New_Arrival .container .titles .title {
+  #New_Arrival .container .heading-group .title_ch {
     font-size: 2rem;
     font-weight: 700;
     line-height: 120%;
   }
-  #New_Arrival .container .titles .subtitle {
+  #New_Arrival .container .heading-group .title_en {
     font-size: 1.5rem;
   }
   #New_Arrival .container .product {

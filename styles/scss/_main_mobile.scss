@@ -58,12 +58,12 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            .titles{
+            .heading-group{
                 gap: $spacing-xs;
                 .title{
                     font-size: $font-size-Display-2;
                 }
-                .subtitle{
+                .description{
                     font-size: $font-size-H5;
                 }
             }
@@ -75,14 +75,14 @@
         padding-bottom: $spacing-2xl;
         .container{
             gap: $spacing-l;
-            .titles{
+            .heading-group{
                 gap: $spacing-xs;
-                .title{
+                .title_ch{
                     font-size: $font-size-H2;
                     font-weight: $font-weight-heading;
                     line-height: $line-height-heading;
                 }
-                .subtitle{
+                .title_en{
                     font-size: $font-size-H4;
                 }
 

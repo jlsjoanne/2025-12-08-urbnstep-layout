@@ -62,14 +62,14 @@ body{
         transform: translateY(-50%);
 
         color: $neutral-color-0;
-        .titles{
+        .heading-group{
             gap: $spacing-m;
             .title{
                 font-size: $font-size-Display-1;
                 font-weight: $font-weight-display;
                 line-height: $line-height-display;
             }
-            .subtitle{
+            .description{
                 font-size: $font-size-H3;
                 font-weight: $font-weight-heading;
                 line-height: $line-height-heading;
@@ -86,17 +86,17 @@ body{
         display: flex;
         flex-direction: column;
         gap: $spacing-xl;
-        .titles{
+        .heading-group{
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: $spacing-s;
-            .title{
+            .title_en{
                 font-size: $font-size-Display-2;
                 font-weight: $font-weight-display;
                 line-height: $line-height-display;
             }
-            .subtitle{
+            .title_ch{
                 font-size: $font-size-H2;
                 font-weight: $font-weight-heading;
                 line-height: $line-height-heading;
