@@ -5,12 +5,12 @@
     padding-top: $spacing-s;
     padding-bottom: $spacing-s;
     min-height: 48px;
-    cursor: default;
+    cursor: pointer;
     font-size: $font-size-l-md;
     font-weight: $font-weight-l;
     line-height: $line-height-l;
     color: $neutral-color-900;
-    &:hover{
+    &:active{
         color: $neutral-color-600;
     }
 }
@@ -29,13 +29,13 @@
     font-size: $font-size-l-md;
     font-weight: $font-weight-l;
     line-height: $line-height-l;
-    cursor: default;
+    cursor: pointer;
 }
 
 .button_color_primary{
     background-color: $primary-color-300;
     color: $neutral-color-900;
-    &:hover{
+    &:active{
         color: $primary-color-500;
     }
 }
@@ -43,7 +43,7 @@
 .button_neutral_filled{
     background-color: $neutral-color-900;
     color: $neutral-color-0;
-    &:hover{
+    &:active{
         background-color: $neutral-color-700;
     }
 }
@@ -51,7 +51,7 @@
 .button_neutral_outlined{
     border: 1px solid $neutral-color-900;
     color: $neutral-color-900;
-    &:hover{
+    &:active{
         background-color: $neutral-color-900;
         color: $neutral-color-0;
     }
@@ -65,7 +65,8 @@
     padding: $spacing-s;
     align-items: center;
     justify-content: center;
-    &:hover{
+    cursor: pointer;
+    &:active{
         color: $primary-color-400;
     }
 }
@@ -81,7 +82,7 @@
     font-size: $font-size-l-md;
     font-weight: $font-weight-l;
     line-height: $line-height-l;
-    &:hover{
+    &:active{
         border-color: $neutral-color-600;
     }
 }

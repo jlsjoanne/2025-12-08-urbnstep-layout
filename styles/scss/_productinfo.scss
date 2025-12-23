@@ -2,7 +2,7 @@
 
 /*navbar, call to action, footer same as homepage*/
 
-.Product_Info{
+#Product_Info{
     padding-top: $spacing-5xl;
     padding-bottom: $spacing-5xl;
     display: flex;
@@ -40,6 +40,9 @@
                     display: flex;
                     gap: $spacing-s;
                     align-items: center;
+                    a{
+                        cursor: pointer;
+                    }
                     .text{
                         font-size: $font-size-l-md;
                         font-weight: $font-weight-l;
@@ -164,16 +167,21 @@
                 align-items: center;
                 .button_text{
                     width: calc(259/526*100%);
+                    position: relative;
                     .favorite_blank{
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         gap: $spacing-xs;
+                        text-align: center;
                     }
                 }
+                
+                
                 .button_icon .bi-heart{
                     display: none;
                 }
+                
             }
         }
         .accordion{
@@ -204,11 +212,11 @@
     }
 }
 
-.product_image_mobile{
+#product_image_mobile{
         display: none;
 }
 
-.Interested{
+#Interested{
     padding-top: $spacing-3xl;
     padding-bottom: $spacing-3xl;
     .container{

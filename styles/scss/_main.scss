@@ -17,7 +17,7 @@ body{
 }
 
 
-.Navbar{
+#Navbar{
     height: 80px;
     .container{
         padding-top: $spacing-m;
@@ -44,7 +44,7 @@ body{
     }
 }
 
-.Hero_Section{
+#Hero_Section{
     height: 800px;
     background-image: url(../../assets/banner.png);
     background-repeat: no-repeat;
@@ -62,14 +62,14 @@ body{
         transform: translateY(-50%);
 
         color: $neutral-color-0;
-        .titles{
+        .heading-group{
             gap: $spacing-m;
             .title{
                 font-size: $font-size-Display-1;
                 font-weight: $font-weight-display;
                 line-height: $line-height-display;
             }
-            .subtitle{
+            .description{
                 font-size: $font-size-H3;
                 font-weight: $font-weight-heading;
                 line-height: $line-height-heading;
@@ -79,24 +79,24 @@ body{
     }
 }
 
-.New_Arrival{
+#New_Arrival{
     padding-top: $spacing-5xl;
     padding-bottom: $spacing-5xl;
     .container{
         display: flex;
         flex-direction: column;
         gap: $spacing-xl;
-        .titles{
+        .heading-group{
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: $spacing-s;
-            .title{
+            .title_en{
                 font-size: $font-size-Display-2;
                 font-weight: $font-weight-display;
                 line-height: $line-height-display;
             }
-            .subtitle{
+            .title_ch{
                 font-size: $font-size-H2;
                 font-weight: $font-weight-heading;
                 line-height: $line-height-heading;
@@ -144,7 +144,7 @@ body{
     }
 }
 
-.Best_Seller{
+#Best_Seller{
     padding-top: $spacing-5xl;
     padding-bottom: $spacing-5xl;
     .container{
@@ -196,7 +196,7 @@ body{
     }
 }
 
-.Sale{
+#Sale{
     padding-top: $spacing-3xl;
     padding-bottom: $spacing-3xl;
     .sale_img{
@@ -290,7 +290,7 @@ body{
     }
 }
 
-.Series{
+#Series{
     padding-top: $spacing-5xl;
     padding-bottom: $spacing-5xl;
     .container{
@@ -350,7 +350,7 @@ body{
     }
 }
 
-.Style{
+#Style{
     padding-top: $spacing-5xl;
     padding-bottom: $spacing-5xl;
     color: $neutral-color-900;
@@ -387,7 +387,7 @@ body{
     }
 }
 
-.Call_to_Action{
+#Call_to_Action{
     padding-top: $spacing-3xl;
     .banner{
         display: flex;
