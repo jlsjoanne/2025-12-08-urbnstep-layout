@@ -47,6 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+button {
+	all: unset; 
+	cursor: pointer; 
+	box-sizing: border-box; 
+	&:focus{
+		outline: 1px auto Highlight;
+	}
+}
 
 *, *:before, *:after{
     box-sizing: border-box;
