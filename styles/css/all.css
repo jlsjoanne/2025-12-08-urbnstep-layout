@@ -80,7 +80,7 @@ table {
   line-height: 150%;
   color: #212529;
 }
-.link_text:hover {
+.link_text:active {
   color: #6C757D;
 }
 
@@ -96,14 +96,14 @@ table {
   font-size: 1rem;
   font-weight: 500;
   line-height: 150%;
-  cursor: default;
+  cursor: pointer;
 }
 
 .button_color_primary {
   background-color: #C0FA73;
   color: #212529;
 }
-.button_color_primary:hover {
+.button_color_primary:active {
   color: #477A11;
 }
 
@@ -111,7 +111,7 @@ table {
   background-color: #212529;
   color: #FFFFFF;
 }
-.button_neutral_filled:hover {
+.button_neutral_filled:active {
   background-color: #495057;
 }
 
@@ -119,7 +119,7 @@ table {
   border: 1px solid #212529;
   color: #212529;
 }
-.button_neutral_outlined:hover {
+.button_neutral_outlined:active {
   background-color: #212529;
   color: #FFFFFF;
 }
@@ -132,8 +132,9 @@ table {
   padding: 12px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-.button_icon:hover {
+.button_icon:active {
   color: #57A203;
 }
 
@@ -149,7 +150,7 @@ table {
   font-weight: 500;
   line-height: 150%;
 }
-.button_option:hover {
+.button_option:active {
   border-color: #6C757D;
 }
 
